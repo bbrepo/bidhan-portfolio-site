@@ -1,0 +1,9 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Optional: CSS-first theme overrides */
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  --color-primary: 220 80% 56%; /* example HSL token usage */
+}
