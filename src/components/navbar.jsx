@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* Mobile: Centered name */}
       <div className="flex-1 flex justify-center md:justify-start">
         <div className="text-4xl font-bold md:text-6xl tracking-tight">
-          Bidham Biswas
+          Bidhan Biswas
         </div>
       </div>
       {/* Desktop: Links */}
