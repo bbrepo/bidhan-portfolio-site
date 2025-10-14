@@ -2,13 +2,13 @@ import React from "react";
 
 const Summary = () => {
   return (
-    <div className="">
-      <div className="flex justify-center md:justify-start mb-4 px-4 mt-4">
+    <div className="p-4">
+      <div className="flex justify-center md:justify-start mb-5  mt-4">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
           Career Summary
         </h1>
       </div>
-      <div className="w-full bg-gray-400/40">
+      <div className="w-full bg-gray-400/40 rounded-lg">
         <p className="text-gray-700 leading-relaxed text-justify p-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
           mollis neque, ut euismod nisl. Maecenas feugiat condimentum lectus,
