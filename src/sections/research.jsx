@@ -1,55 +1,30 @@
 import React from "react";
 
 const Research = () => {
-  const researchData = [
-    {
-      id: 1,
-      title: "Machine Learning Applications in Web Development",
-      journal: "Journal of Computer Science",
-      year: "2024",
-      description:
-        "Explored the integration of ML algorithms in modern web applications for enhanced user experience and performance optimization.",
-    },
-    {
-      id: 2,
-      title: "Cloud Computing Security Frameworks",
-      journal: "International Conference on Cloud Security",
-      year: "2023",
-      description:
-        "Developed comprehensive security frameworks for cloud-based applications with focus on data protection and access control.",
-    },
-  ];
-
   return (
     <div className="p-4">
-      <div className="flex justify-center md:justify-start mb-4 sm:mb-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
-          Research
+      <div className="flex justify-center md:justify-start mb-5  mt-4">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+          Research Interests
         </h1>
       </div>
-
-      <div className="space-y-4 sm:space-y-6">
-        {researchData.map((research) => (
-          <div
-            key={research.id}
-            className="bg-gray-100 rounded-lg overflow-hidden shadow-sm"
-          >
-            <h3 className="text-lg sm:text-xl font-semibold p-3 sm:p-4 bg-gray-200">
-              {research.title}
-            </h3>
-            <div className="p-3 sm:p-4 bg-gray-300">
-              <p className="font-medium text-gray-800 mb-1 text-sm sm:text-base">
-                {research.journal}
-              </p>
-              <p className="text-gray-600 text-xs sm:text-sm mb-2">
-                {research.year}
-              </p>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                {research.description}
-              </p>
-            </div>
-          </div>
-        ))}
+      <div className="w-full bg-gray-400/40 rounded-lg">
+        <p className="text-gray-700 leading-relaxed text-justify p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+          mollis neque, ut euismod nisl. Maecenas feugiat condimentum lectus,
+          quis molestie dolor dignissim sed. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada fames ac turpis egestas. Sed
+          pulvinar quam a vestibulum vehicula. Quisque in dui est. Suspendisse
+          fermentum blandit velit, eu posuere leo egestas sed. Cras auctor
+          gravida urna, cursus porttitor magna ullamcorper nec. Cras nec
+          pulvinar nisl. Nunc mi urna, euismod eu ipsum nec, lobortis maximus
+          enim. In hac habitasse platea dictumst. Phasellus cursus enim iaculis,
+          convallis neque quis, scelerisque est. Suspendisse ac pretium metus.
+          Donec mi nisl, pulvinar eu pharetra sit amet, iaculis sed risus.
+          Curabitur ac ex vel lectus tempor tempus ut sed leo. Pellentesque arcu
+          lorem, consectetur et bibendum eu, fringilla at diam. Etiam et massa
+          tellus.
+        </p>
       </div>
     </div>
   );
