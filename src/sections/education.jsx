@@ -4,19 +4,18 @@ const Education = () => {
   const educationData = [
     {
       id: 1,
-      degree: "Bachelor of Computer Science",
-      institution: "University of Technology",
-      year: "2018 - 2022",
-      description:
-        "Focused on software development, algorithms, and data structures. Graduated with honors.",
+      degree: "Master of Science in Computer Science",
+      institution: "The University of Texas at Tyler, Tyler, TX",
+      year: "May 2024",
+      description: "GPA: 4.00/4.00",
     },
     {
       id: 2,
-      degree: "Master of Software Engineering",
-      institution: "Tech Institute",
-      year: "2022 - 2024",
-      description:
-        "Specialized in web technologies, cloud computing, and project management methodologies.",
+      degree: "Bachelor of Science in Computer Science and Engineering",
+      institution:
+        "Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh",
+      year: "November 2011",
+      description: "GPA: 3.07/4.00",
     },
   ];
 

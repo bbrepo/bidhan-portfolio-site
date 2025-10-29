@@ -20,6 +20,7 @@ import Extracurricular from "./sections/Extracurricular";
 import Recommendations from "./sections/Recommendations";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
 
           <Contact />
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );
