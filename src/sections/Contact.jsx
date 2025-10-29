@@ -37,7 +37,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <div className="w-full bg-white rounded-lg p-4 sm:p-6">
+      <div className="w-full bg-gray-300 rounded-lg p-4 sm:p-6">
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Email Field */}
           <div>
@@ -55,7 +55,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               placeholder="Enter your email"
-              className="w-full px-4 py-2 sm:py-3 bg-gray-200 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent text-sm sm:text-base"
+              className="w-full px-4 py-2 sm:py-3 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent text-sm sm:text-base"
             />
           </div>
 

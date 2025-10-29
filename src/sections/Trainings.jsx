@@ -21,35 +21,35 @@ const Trainings = () => {
   ];
 
   return (
-    <div className="p-4">
-      <div className="flex justify-center md:justify-start mb-4 sm:mb-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
-          Trainings
-        </h1>
-      </div>
+    <div className="">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight p-2 mx-4 text-center md:text-left">
+        Trainings
+      </h1>
 
-      <div className="space-y-4 sm:space-y-6">
-        {trainingsData.map((training) => (
-          <div
-            key={training.id}
-            className="bg-gray-100 rounded-lg overflow-hidden shadow-sm"
-          >
-            <h3 className="text-lg sm:text-xl font-semibold p-3 sm:p-4 bg-gray-200">
-              {training.title}
-            </h3>
-            <div className="p-3 sm:p-4 bg-gray-300">
-              <p className="font-medium text-gray-800 mb-1 text-sm sm:text-base">
-                {training.organization}
-              </p>
-              <p className="text-gray-600 text-xs sm:text-sm mb-2">
-                {training.year}
-              </p>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                {training.description}
-              </p>
+      <div className="p-4 bg-gray-200 m-4 rounded-xl">
+        <div className="space-y-6">
+          {trainingsData.map((training, index) => (
+            <div key={training.id}>
+              <h3 className="text-base sm:text-lg font-bold mb-3 text-gray-900">
+                Training {index + 1}
+              </h3>
+              <div className="p-4 sm:p-5 bg-gray-400/60 rounded-xl">
+                <h4 className="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+                  {training.title}
+                </h4>
+                <p className="font-medium text-gray-800 mb-1 text-sm">
+                  {training.organization}
+                </p>
+                <p className="text-gray-700 text-xs sm:text-sm mb-2">
+                  {training.year}
+                </p>
+                <p className="text-gray-800 leading-relaxed text-sm">
+                  {training.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
