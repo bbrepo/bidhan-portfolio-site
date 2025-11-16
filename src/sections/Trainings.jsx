@@ -21,32 +21,32 @@ const Trainings = () => {
   ];
 
   return (
-    <div className="">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight p-2 mx-4 text-center md:text-left">
+    <div className="py-4">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-center md:text-left mb-4">
         Trainings
       </h1>
 
-      <div className="p-4 bg-gray-200 m-4 rounded-xl">
+      <div className="bg-gray-200 rounded-xl p-3">
         <div className="space-y-6">
-          {trainingsData.map((training, index) => (
-            <div key={training.id}>
-              <h3 className="text-base sm:text-lg font-bold mb-3 text-gray-900">
-                Training {index + 1}
-              </h3>
-              <div className="p-4 sm:p-5 bg-gray-400/60 rounded-xl">
-                <h4 className="text-sm sm:text-base font-semibold text-gray-900 mb-2">
+          {trainingsData.map((training) => (
+            <div
+              key={training.id}
+              className="p-3 sm:p-4 bg-gray-400/60 rounded-xl"
+            >
+              <div className="flex justify-between items-start mb-2">
+                <h4 className="text-sm sm:text-base font-semibold text-gray-900">
                   {training.title}
                 </h4>
-                <p className="font-medium text-gray-800 mb-1 text-sm">
-                  {training.organization}
-                </p>
-                <p className="text-gray-700 text-xs sm:text-sm mb-2">
+                <p className="text-gray-700 text-xs sm:text-sm ml-4 whitespace-nowrap">
                   {training.year}
                 </p>
-                <p className="text-gray-800 leading-relaxed text-sm">
-                  {training.description}
-                </p>
               </div>
+              <p className="font-medium text-gray-800 mb-1 text-sm">
+                {training.organization}
+              </p>
+              <p className="text-gray-800 leading-relaxed text-sm">
+                {training.description}
+              </p>
             </div>
           ))}
         </div>

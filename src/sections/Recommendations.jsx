@@ -103,42 +103,36 @@ const Recommendations = () => {
   ];
 
   return (
-    <div className="p-4">
-      <div className="flex justify-center md:justify-start mb-4 sm:mb-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
-          Recommendations
-        </h1>
-      </div>
+    <div className="py-4">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-center md:text-left mb-4">
+        Recommendations
+      </h1>
 
-      <div className="w-full overflow-x-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-gray-500">
-          {recommendationsData.map((rec) => (
-            <div key={rec.id} className="p-4 border border-gray-400 bg-white">
-              <h3 className="font-bold text-gray-900 text-sm sm:text-base mb-2">
-                {rec.name}
-              </h3>
-              <p className="text-gray-700 text-xs sm:text-sm mb-1">
-                {rec.title}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {recommendationsData.map((rec) => (
+          <div key={rec.id} className="p-4 bg-gray-400/60 rounded-xl">
+            <h3 className="font-bold text-gray-900 text-sm sm:text-base mb-2">
+              {rec.name}
+            </h3>
+            <p className="text-gray-800 text-xs sm:text-sm mb-1">{rec.title}</p>
+            {rec.organization && (
+              <p className="text-gray-800 text-xs sm:text-sm mb-2">
+                {rec.organization}
               </p>
-              {rec.organization && (
-                <p className="text-gray-700 text-xs sm:text-sm mb-2">
-                  {rec.organization}
-                </p>
-              )}
-              {rec.email && (
-                <p className="text-gray-600 text-xs sm:text-sm break-all">
-                  {rec.email}
-                </p>
-              )}
-              {rec.phone && (
-                <p className="text-gray-600 text-xs sm:text-sm">{rec.phone}</p>
-              )}
-              {rec.phone2 && (
-                <p className="text-gray-600 text-xs sm:text-sm">{rec.phone2}</p>
-              )}
-            </div>
-          ))}
-        </div>
+            )}
+            {rec.email && (
+              <p className="text-gray-700 text-xs sm:text-sm break-all">
+                {rec.email}
+              </p>
+            )}
+            {rec.phone && (
+              <p className="text-gray-700 text-xs sm:text-sm">{rec.phone}</p>
+            )}
+            {rec.phone2 && (
+              <p className="text-gray-700 text-xs sm:text-sm">{rec.phone2}</p>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -87,14 +87,14 @@ const Skills = () => {
   ];
 
   return (
-    <div className="p-4 ">
-      <div className="flex justify-center md:justify-start mb-4 sm:mb-6 ">
+    <div className="py-4">
+      <div className="flex justify-center md:justify-start mb-4 sm:mb-6">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
           Skills
         </h1>
       </div>
 
-      <div className="w-full overflow-x-auto ">
+      <div className="w-full overflow-x-auto">
         <table className="w-full bg-gray-500 rounded-lg overflow-hidden shadow-sm border border-gray-500  ">
           <thead className="bg-gray-300">
             <tr>

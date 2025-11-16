@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-8 py-4 relative">
+    <nav className="flex items-center justify-between py-4 relative">
       {/* Mobile: Centered name */}
       <div className="flex-1 flex justify-center md:justify-start">
         <div className="text-4xl font-bold md:text-6xl tracking-tight">

@@ -26,31 +26,33 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="bg-gray-100">
-        <Navbar />
-        <main>
-          <Hero />
-          <Summary />
-          <Education />
-          <Honors />
-          <Research />
-          <Publications />
-          <Articles />
-          <Memberships />
-          <Certifications />
-          <Experiences />
-          <Internships />
-          <Trainings />
+        <div className="w-[95%] md:w-[70%] mx-auto ">
+          <Navbar />
+          <main>
+            <Hero />
+            <Summary />
+            <Education />
+            <Honors />
+            <Research />
+            <Publications />
+            <Articles />
+            <Memberships />
+            <Certifications />
+            <Experiences />
+            <Internships />
+            <Trainings />
 
-          <Tests />
-          <Skills />
-          <LanguageProficiency />
-          <Achievements />
-          <Extracurricular />
-          <Recommendations />
+            <Tests />
+            <Skills />
+            <LanguageProficiency />
+            <Achievements />
+            <Extracurricular />
+            <Recommendations />
 
-          <Contact />
-        </main>
-        <Footer />
+            <Contact />
+          </main>
+          <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );

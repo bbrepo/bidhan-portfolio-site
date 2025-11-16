@@ -17,14 +17,14 @@ const Honors = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className="py-4">
       <div className="flex justify-center md:justify-start mb-4 sm:mb-6">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
           Honors
         </h1>
       </div>
 
-      <div className="w-full bg-gray-400/40 rounded-lg p-4">
+      <div className="w-full bg-gray-400/40 rounded-lg p-6">
         <ul className="space-y-3">
           {honorsData.map((honor) => (
             <li key={honor.id} className="text-gray-700">

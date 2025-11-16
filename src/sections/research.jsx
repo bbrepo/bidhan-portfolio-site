@@ -2,14 +2,14 @@ import React from "react";
 
 const Research = () => {
   return (
-    <div className="p-4">
-      <div className="flex justify-center md:justify-start mb-5  mt-4">
+    <div className="py-4">
+      <div className="flex justify-center md:justify-start mb-5 mt-4">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
           Research Interests
         </h1>
       </div>
       <div className="w-full bg-gray-400/40 rounded-lg">
-        <p className="text-gray-700 leading-relaxed text-justify p-4">
+        <p className="text-gray-700 leading-relaxed text-justify p-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
           mollis neque, ut euismod nisl. Maecenas feugiat condimentum lectus,
           quis molestie dolor dignissim sed. Pellentesque habitant morbi

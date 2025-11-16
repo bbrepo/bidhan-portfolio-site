@@ -15,7 +15,7 @@ const LanguageProficiency = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className="py-4">
       <div className="flex justify-center md:justify-start mb-4 sm:mb-6">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
           Language Proficiency
