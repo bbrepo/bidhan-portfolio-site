@@ -25,8 +25,8 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="bg-gray-100">
-        <div className="w-[95%] md:w-[70%] mx-auto ">
+      <div className="">
+        <div className="w-[95%] md:w-[70%] mx-auto bg-gray-100 p-4">
           <Navbar />
           <main>
             <Hero />

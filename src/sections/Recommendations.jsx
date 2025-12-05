@@ -108,7 +108,7 @@ const Recommendations = () => {
         Recommendations
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-gray-300/90 p-3 rounded-xl">
         {recommendationsData.map((rec) => (
           <div key={rec.id} className="p-4 bg-gray-400/60 rounded-xl">
             <h3 className="font-bold text-gray-900 text-sm sm:text-base mb-2">
